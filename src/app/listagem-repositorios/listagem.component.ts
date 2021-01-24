@@ -1,6 +1,6 @@
 import { DataService } from '../services/data.service';
 import { ApiService } from '../services/api.service';
-import { Repositorios } from '../repositorios.interface';
+import { Repositorios } from './repositorios.interface';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -20,11 +20,11 @@ export class ListagemComponent implements OnInit {
     private dataService: DataService
   ) { }
 
-  //executa a lista do service 
+  //executa a lista do service
   ngOnInit(): void {
     this.api.getData()
     .subscribe((res : any) => {
-     console.log( this.lista = res);
+    this.lista = res
     })
   }
 

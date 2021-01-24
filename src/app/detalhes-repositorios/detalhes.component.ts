@@ -1,6 +1,5 @@
-import { Contributors } from './../contributors.interface';
 import { ContributorsService } from './../services/contributors.service';
-import { Router } from '@angular/router';
+import { Contributors } from './contributors.interface';
 import { DataService } from '../services/data.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -13,22 +12,16 @@ export class DetalhesComponent implements OnInit {
   lista: Contributors[]
 
   constructor(
-    private dataService:DataService,
-    private router: Router,
-    private contributorService:ContributorsService
+    //private dataService:DataService,
+    private contributorsService:ContributorsService
   ) { }
 
   ngOnInit(): void {
-    console.log(this.dataService.getRepositorios())
-    this.contributorService.getContributors()
+   // console.log(this.dataService.getRepositorios())
+   this.contributorsService.getContributors()
     .subscribe((res : any) => {
-     console.log( this.lista = res);
+    this.lista = res
     })
-  }
-
-  detalhesContributors(contributors:Contributors){
-    //this.contributorService.setContributors(contributors);
-    this.router.navigateByUrl('/contributors')
   }
 
 }

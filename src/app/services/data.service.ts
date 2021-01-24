@@ -1,4 +1,4 @@
-import { Repositorios } from './../repositorios.interface';
+import { Repositorios } from './../listagem-repositorios/repositorios.interface';
 import { Injectable } from '@angular/core';
 
 @Injectable({

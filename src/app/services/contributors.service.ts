@@ -1,5 +1,5 @@
+import { Contributors } from '../detalhes-repositorios/contributors.interface';
 import { HttpClient } from '@angular/common/http';
-import { Contributors } from './../contributors.interface';
 import { Injectable } from '@angular/core';
 import {tap} from 'rxjs/operators';
 
