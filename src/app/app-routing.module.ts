@@ -7,7 +7,6 @@ const routes: Routes = [
   { path: '', redirectTo: '/lista', pathMatch: 'full' },
   { path: 'lista', component: ListagemComponent },
   { path: 'detalhes', component: DetalhesComponent },
-  { path: 'contributors', component: DetalhesComponent },
 ];
 
 @NgModule({
