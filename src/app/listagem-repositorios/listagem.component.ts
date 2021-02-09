@@ -29,8 +29,7 @@ export class ListagemComponent implements OnInit {
   }
 
   detalhes(repositorios:Repositorios){
-    this.dataService.setRepositorios(repositorios);
-    this.router.navigateByUrl('/detalhes')
+    this.router.navigateByUrl('/detalhes');
   }
 
 }

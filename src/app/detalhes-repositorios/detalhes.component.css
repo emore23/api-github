@@ -1,0 +1,25 @@
+
+#content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#repository-desc {
+  color: #A8A8B3;
+  font-size: 20px;
+}
+
+#repository-title {
+  font-weight: bold;
+}
+
+
+.body-title {
+  padding: 60px 0px;
+}
+
+.search-group {
+  padding-bottom: 60px;
+  max-width: 700px
+}
