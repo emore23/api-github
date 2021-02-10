@@ -8,9 +8,6 @@ export class DataService {
   private repositorios: Repositorios;
   constructor() { }
 
-  setRepositorios(repositorios:Repositorios){
-    this.repositorios = repositorios
-  }
   getRepositorios(){
     return this.repositorios;
   }

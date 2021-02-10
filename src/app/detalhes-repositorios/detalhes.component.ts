@@ -1,4 +1,5 @@
-import { DataService } from './../services/data.service';
+import { ApiService } from './../services/api.service';
+import { Detalhes } from './detalhes.interface';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './detalhes.component.html',
   styleUrls: ['./detalhes.component.css']
 })
-export class DetalhesComponent implements OnInit {
+export class DetalhesComponent {
+
+  lista: Detalhes[]
 
   constructor(
-    private dataService:DataService,
   ) { }
 
-  ngOnInit(): void {
-    console.log(this.dataService.getRepositorios())
-  }
+
+
 
 }
